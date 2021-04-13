@@ -12,11 +12,33 @@ public class MyServer {
 
 	public static void main(String[] args) throws UnknownHostException, IOException, ClassNotFoundException, InterruptedException{
 		
+			//Instantiate ServerSocket class
 			ServerSocket ss=new ServerSocket(6666);  
-			Socket s=ss.accept();//establishes connection   
+			
+			//establishes connection 
+			Socket s=ss.accept();  
+			
 			ObjectInputStream dis=new ObjectInputStream(s.getInputStream());  
 			String  str=(String)dis.readUTF();  
+			
+			//Print out message
 			System.out.println("message= "+str);  
+			
+			
+			//Reversing the message
+			StringBuilder input1 = new StringBuilder();
+			 
+	        // append a string into StringBuilder input1
+	        input1.append(str);
+	 
+	        // reverse StringBuilder input1
+	        input1.reverse();
+	 
+	        // print reversed String
+	        System.out.println(input1);
+			
+			
+			
 			ss.close();  
 			 
 

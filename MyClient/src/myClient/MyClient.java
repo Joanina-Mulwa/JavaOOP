@@ -12,7 +12,9 @@ public class MyClient {
 
 	public static void main(String[] args) throws UnknownHostException, IOException, ClassNotFoundException, InterruptedException{
 		    
+			//Instantiating Socket class
 			Socket s=new Socket("localhost",6666);  
+			
 			ObjectOutputStream dout=new ObjectOutputStream(s.getOutputStream());  
 			dout.writeUTF("Hello Server");  
 			dout.flush();  
