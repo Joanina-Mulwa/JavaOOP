@@ -4,7 +4,8 @@ public class TestingAPI {
 
 	public static void main(String[] args) {
 		
-		System.out.println(ExampleAPI.isSocketOpen("instructables.com", 80) ? "open!" : "not open");
+		String url = "intructables.com";
+		System.out.println("Socket: "+ url + ", is " +(ExampleAPI.isSocketOpen("instructables.com", 80) ? "open!" : "not open"));
 		System.out.println(ExampleAPI.isSocketOpen("instructables.com", 80));
 		
 		ExampleAPI.calculation();
