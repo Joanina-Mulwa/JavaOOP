@@ -22,7 +22,7 @@ public class MyServer {
 			String  str=(String)dis.readUTF();  
 			
 			//Print out message
-			System.out.println("message= "+str);  
+			System.out.println("message written by client is= "+str);  
 			
 			
 			//Reversing the message
@@ -35,7 +35,7 @@ public class MyServer {
 	        input1.reverse();
 	 
 	        // print reversed String
-	        System.out.println(input1);
+	       // System.out.println("reversed message written by client is "+input1);
 			
 			
 			
