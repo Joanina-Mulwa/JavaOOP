@@ -14,6 +14,10 @@ public class MyClient {
 		    
 			//Instantiating Socket class
 			Socket s=new Socket("localhost",6666);  
+			 
+			//String host = "192.168.137.240";
+			//int port = 6666;
+			//Socket s=new Socket(host,port); 
 			
 			ObjectOutputStream dout=new ObjectOutputStream(s.getOutputStream());  
 			dout.writeUTF("Hello Server");  

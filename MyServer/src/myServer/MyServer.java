@@ -35,7 +35,7 @@ public class MyServer {
 	        input1.reverse();
 	 
 	        // print reversed String
-	       // System.out.println("reversed message written by client is "+input1);
+	        System.out.println("reversed message written by client is= "+input1);
 			
 			
 			
